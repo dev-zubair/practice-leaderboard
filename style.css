@@ -5,7 +5,7 @@
 body{
     font-family: 'Poppins', sans-serif;
     background-color: #F3F1FF;
-    margin: 0;
+    margin: 0 auto;
 }
 .header-main{
     background-color: #562EFF;
@@ -174,3 +174,62 @@ main{
     width: 20px;
     height: 20px;
 }
+
+
+/* Media Query  */
+@media screen and (max-width: 688px){
+    .header-main{
+        height: 120px;
+        padding: 20px 0;
+    }
+    .nav-container{
+        flex-direction: column;
+    }
+    .container{
+        width: 100%;
+    }
+    .all-players{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .single-player{
+        flex-direction: column;
+    }
+    .single-player img{
+        width: 100%;
+        height: 100%;
+    }
+    .blogs{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .blog{
+        flex-direction: column;
+        margin-right: 30px;
+    }
+    .blog .thumbnail img {
+        width: 100%;
+        height: 100%;
+        
+    }
+  .courses{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap:50px;
+    }
+    .course{
+        text-align: center;
+        margin-right: 30px;
+    }
+    .course .course-banner img {
+        width: 100%;
+        height: 100%;
+    }
+    .course-info{
+        justify-content: space-around;
+    }
+    
+}
+
+
+
